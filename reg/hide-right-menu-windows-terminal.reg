@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+;已存在右键路径的情况会多出空白路径
+;右键菜单添加WindowsTerminal
+[HKEY_CLASSES_ROOT\Directory\Background\shell\wt]
+@="Open Windows Terminal here"
+;图标位置
+"Icon"="%USERPROFILE%\\AppData\\Local\\Terminal\\terminal.ico"
+;只有按下shift时才会出现
+"Extended"=""
+"NoWorkingDirectory"=""
+;隐藏直接点击右键时出现的Terminal图标
+[HKEY_CLASSES_ROOT\Directory\Background\shell\wt\command]
+@="C:\\Users\\timka\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe"
+;[HKEY_CLASSES_ROOT\PackagedCom\Package\Microsoft.WindowsTerminal_1.7.1033.0_x64__8wekyb3d8bbwe\Class\{9F156763-7844-4DC4-B2B1-901F640F5155}]
+;"DllPath"="..\\WindowsTerminalShellExt.dll"
