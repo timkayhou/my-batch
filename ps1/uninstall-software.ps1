@@ -1,7 +1,7 @@
 # 导出应用列表
-Get-AppxPackage >> Downloads\AppxPackage.bak1.txt
+Get-AppxPackage >> D:\AppxPackage.bak1.txt
 # 小娜
-Get-AppxPackage -allusers Microsoft.549981C3F5F10 | Remove-AppxPackage
+Get-AppxPackage -allusers Microsoft.549981C3F5F10_4.2204.13303.0_x64__8wekyb3d8bbwe | Remove-AppxPackage
 # 获取帮助
 Remove-AppxPackage -allusers Microsoft.GetHelp_10.2208.2551.0_x64__8wekyb3d8bbwe
 # 人脉
